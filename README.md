@@ -413,14 +413,13 @@ Signals are presented as indicators for further investigation.
 ---
 
 # 📸 Screenshots
+<img width="1919" height="997" alt="image" src="https://github.com/user-attachments/assets/8492951f-f500-442b-bba4-ae0d89b78f79" />
+<img width="1896" height="996" alt="image" src="https://github.com/user-attachments/assets/6304158d-dbab-483f-b778-c6502aa799ab" />
+<img width="1879" height="977" alt="image" src="https://github.com/user-attachments/assets/e690d19e-af1b-4488-89ca-f3f245bf44cf" />
 
-*Add project screenshots here.*
 
-Recommended screenshots:
 
-1. Dashboard — Since You Last Checked
-2. View Why — Significance Score
-3. Watchlist — Market Overview
+
 
 ---
 
