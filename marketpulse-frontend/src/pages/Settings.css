@@ -1,0 +1,126 @@
+.settings-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 4px;
+  letter-spacing: -0.02em;
+}
+
+.settings-subtitle {
+  margin: 0 0 20px;
+  color: var(--ink-500);
+  font-size: 13px;
+}
+
+.settings-card {
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  max-width: 640px;
+}
+
+.settings-card__title {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.settings-card__desc {
+  margin: 0 0 18px;
+  font-size: 12.5px;
+  color: var(--ink-500);
+  line-height: 1.5;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.settings-row:last-child { border-bottom: none; padding-bottom: 0; }
+.settings-row:first-child { padding-top: 0; }
+
+.settings-row__label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.settings-row__desc {
+  font-size: 12px;
+  color: var(--ink-500);
+  margin-top: 2px;
+  max-width: 380px;
+}
+
+.toggle {
+  width: 40px;
+  height: 23px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  border: none;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.toggle__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: transform 0.15s ease;
+}
+
+.toggle--on {
+  background: var(--green-700);
+}
+.toggle--on .toggle__thumb {
+  transform: translateX(17px);
+}
+
+.sensitivity {
+  padding-top: 4px;
+}
+
+.sensitivity__slider {
+  width: 100%;
+  accent-color: var(--green-700);
+  margin-bottom: 6px;
+}
+
+.sensitivity__scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  color: var(--ink-300);
+  margin-bottom: 12px;
+}
+
+.sensitivity__current {
+  font-size: 13px;
+  color: var(--ink-700);
+}
+
+.settings-save-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-saved {
+  font-size: 13px;
+  color: var(--green-700);
+  font-weight: 600;
+  animation: overlay-in 0.15s ease;
+}

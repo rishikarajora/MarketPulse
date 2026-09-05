@@ -1,0 +1,29 @@
+.price-chart {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 16px 8px 8px 0;
+}
+
+.price-chart__ranges {
+  display: flex;
+  gap: 4px;
+  padding: 0 16px 12px;
+}
+
+.price-chart__range-btn {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--ink-500);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: var(--r-sm);
+}
+.price-chart__range-btn:hover {
+  background: var(--bg-sunken);
+}
+.price-chart__range-btn--active {
+  background: var(--ink-900);
+  color: #fff;
+}

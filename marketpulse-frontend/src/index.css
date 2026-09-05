@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Color tokens */
+  --bg-app: #F7F7F5;
+  --bg-surface: #FFFFFF;
+  --bg-sunken: #F0F0EC;
+  --ink-900: #14171C;
+  --ink-700: #3A3F47;
+  --ink-500: #6B7078;
+  --ink-300: #A3A7AD;
+  --border: #E3E3DE;
+  --border-strong: #CFCFC8;
+
+  --green-700: #0B6E4F;
+  --green-600: #0E8A63;
+  --green-100: #E3F3EC;
+
+  --red-700: #B3261E;
+  --red-600: #C6362D;
+  --red-100: #FBE9E7;
+
+  --amber-700: #92620B;
+  --amber-600: #B7791F;
+  --amber-100: #FBF0DA;
+
+  --blue-600: #2A5DB0;
+  --blue-100: #E8EEFA;
+
+  --accent: #0E8A63;
+
+  /* Type */
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+
+  /* Radii */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+
+  /* Shadow — used sparingly, only for floating/overlay elements */
+  --shadow-float: 0 8px 24px rgba(20, 23, 28, 0.12);
+  --shadow-soft: 0 1px 2px rgba(20, 23, 28, 0.04);
+
+  --sidebar-w: 232px;
+  --header-h: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--bg-app);
+  color: var(--ink-900);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.up { color: var(--green-700); }
+.down { color: var(--red-700); }
+
+::selection {
+  background: var(--green-100);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--green-600);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
