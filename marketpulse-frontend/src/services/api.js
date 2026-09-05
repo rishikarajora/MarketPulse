@@ -5,7 +5,7 @@
 // directly; they only ever call through this file. When the real backend
 // exists, replace the bodies below with fetch('/api/...') calls and the
 // rest of the app should not need to change.
-const API_BASE_URL = 'https://marketpulse-1-2fkf.onrender.com/';
+const API_BASE_URL = 'https://marketpulse-1-2fkf.onrender.com/api';
 
 export async function getSnapshotChanges() {
   const response = await fetch(`${API_BASE_URL}/snapshot/changes`);
